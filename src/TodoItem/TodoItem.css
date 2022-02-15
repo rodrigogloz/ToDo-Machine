@@ -1,0 +1,72 @@
+.TodoItem {
+  background-color: var(--text-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
+  border-radius: 35px;
+  box-shadow: 0px 5px 30px rgba(202, 206, 207, 0.3);
+}
+.TodoItem:hover {
+  box-shadow: 0px 5px 30px rgba(202, 206, 207, 0.75);
+}
+
+.TodoItem-p {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--light-color);
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+  color: var(--unchecked-color);
+}
+
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  width: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Icon-check {
+  color: var(--unchecked-color);
+  position: absolute;
+  left: 18px;
+  border-radius: 25px;
+  border: var(--unchecked-color) solid;
+}
+
+.Icon-check:hover {
+  color: var(--checked-green);
+}
+
+.Icon-check--active {
+  color: var(--checked-green);
+  font-size: 30px;
+  border-radius: 25px;
+  border: var(--checked-green) solid;
+}
+
+.Icon-delete {
+  font-size: 20px;
+  position: absolute;
+  top: -16px;
+  right: 0;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: var(--delete-red);
+  border-radius: 25px;
+  box-shadow: 0px 1px 25px rgb(255, 0, 0, 0.4);
+}
+.Icon-delete:hover {
+  box-shadow: 0px 1px 25px rgb(255, 0, 0, 0.8);
+  transform: scale(1.1);
+}

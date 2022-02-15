@@ -1,0 +1,41 @@
+.TodoSearchMain {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.TodoSearchMain img {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  position: absolute;
+  margin-left: 42px;
+}
+
+.TodoSearch {
+  background: var(--dark-main-color);
+  box-sizing: border-box;
+  border-radius: 35px;
+  border: 2px solid var(--unchecked-color);
+  margin: 0 24px;
+  height: 50px;
+  width: calc(100% - 62px);
+  font-size: 22px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: var(--light-color);
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+}
+
+.TodoSearch::placeholder {
+  color: var(--unchecked-color);
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.TodoSearch:focus {
+  border: none;
+  outline: 3px solid;
+  outline-color: var(--main-color);
+  /* transform: scale(1.05); */
+}
