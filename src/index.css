@@ -28,4 +28,8 @@ body {
   box-sizing: border-box;
   position: relative;
   min-height: 100vh;
+  background-color: var(--text-color);
+  padding: 36px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 30px rgba(202, 206, 207, 0.3);
 }
