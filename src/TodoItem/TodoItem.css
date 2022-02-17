@@ -56,15 +56,16 @@
 }
 
 .Icon-delete {
+  color: var(--delete-red);
   font-size: 20px;
   position: absolute;
   top: -16px;
   right: 0;
   box-sizing: border-box;
   margin: 0;
-  background-color: var(--delete-red);
+  background-color: var(--text-color);
   border-radius: 25px;
-  box-shadow: 0px 1px 25px rgb(255, 0, 0, 0.4);
+  box-shadow: 0px 1px 25px rgba(202, 206, 207, 0.3);
 }
 .Icon-delete:hover {
   box-shadow: 0px 1px 25px rgb(255, 0, 0, 0.8);
