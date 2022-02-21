@@ -12,12 +12,14 @@
 }
 
 .TodoSearch {
+  display: flex;
+  align-items: center;
   background: var(--dark-main-color);
   box-sizing: border-box;
   border-radius: 35px;
   border: 2px solid var(--unchecked-color);
-  margin: 0 24px;
-  height: 50px;
+  margin: 0 auto;
+  height: 48px;
   width: calc(100% - 62px);
   font-size: 16px;
   text-align: center;

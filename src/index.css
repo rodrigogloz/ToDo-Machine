@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   max-width: 650px;
+  overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
   align-items: center;
