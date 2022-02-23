@@ -1,5 +1,5 @@
 .TodoItem {
-  background-color: var(--text-color);
+  background-color: var(--dark-main-color);
   position: relative;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
   box-shadow: 0px 5px 30px rgba(202, 206, 207, 0.3);
 }
 .TodoItem:hover {
-  box-shadow: 0px 5px 30px rgba(202, 206, 207, 0.75);
+  box-shadow: 0px 5px 30px rgba(202, 206, 207, 0.65);
 }
 
 .TodoItem-p {
@@ -73,5 +73,5 @@
 }
 .Icon-delete:hover {
   box-shadow: 0px 1px 25px rgb(255, 0, 0, 0.8);
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }

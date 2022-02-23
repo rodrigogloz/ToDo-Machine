@@ -49,13 +49,14 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   border: 2px solid var(--unchecked-color);
   /* min-width: 240px; */
-  height: 140px;
+  height: 74px;
   scroll-behavior: none;
   resize: none;
   border-radius: 50px;
   padding: 15px 30px;
   background-color: var(--text-color);
   color: var(--light-color);
+  text-align: center;
 }
 
 .formText:focus {

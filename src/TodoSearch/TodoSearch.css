@@ -41,3 +41,30 @@
   outline-color: var(--main-color);
   /* transform: scale(1.05); */
 }
+
+.TodoSearchMain > img {
+  filter: invert(44%) sepia(11%) saturate(0%) hue-rotate(164deg) brightness(95%)
+    contrast(93%);
+}
+
+.TodoSearch:disabled {
+  /* opacity: 50%; */
+  background: linear-gradient(90deg, rgb(30, 31, 37, 1), rgb(152, 154, 155));
+  background-size: 400% 40%;
+  animation: loadingAnimation 4s linear infinite;
+  font-size: 0%;
+  border: none;
+  z-index: 1;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,5 @@
+.emptySearch {
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+}

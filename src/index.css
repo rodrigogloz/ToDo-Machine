@@ -1,10 +1,10 @@
 :root {
   --dark-main-color: rgb(30, 31, 37);
-  --main-color: rgb(53, 188, 241);
+  --main-color: #35bcf1;
   --text-color: #21272e;
-  --light-color: rgb(187, 222, 251);
+  --light-color: #bbdefb;
   --checked-green: rgb(27, 187, 27);
-  --unchecked-color: rgb(110, 110, 110);
+  --unchecked-color: #6e6e6e;
   --delete-red: rgb(255, 52, 37);
 }
 
@@ -31,6 +31,6 @@ body {
   min-height: 100vh;
   background-color: var(--text-color);
   padding: 36px;
-  border-radius: 50px;
+  border-radius: 40px;
   box-shadow: 0px 5px 30px rgba(202, 206, 207, 0.3);
 }
