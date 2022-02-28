@@ -1,0 +1,31 @@
+.reloadInfoButton {
+  background-color: var(--dark-main-color);
+  border-radius: 25px;
+  border-style: solid;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.reloadIcon {
+  margin: auto;
+  padding: 0;
+  filter: invert(82%) sepia(41%) saturate(5598%) hue-rotate(164deg)
+    brightness(97%) contrast(94%);
+}
+
+.reloadInfoButtonText {
+  color: var(--light-color);
+  box-sizing: border-box;
+  height: 35px;
+  margin: 0;
+  margin-right: 20px;
+  padding-top: 9px;
+}
+
+.reloadInfoButtonContainer {
+  display: flex;
+  margin-bottom: 52px;
+  margin-top: -24px;
+  align-self: center;
+}

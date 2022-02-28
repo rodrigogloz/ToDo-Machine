@@ -3,3 +3,27 @@ ul {
   padding: 0 0 56px 0;
   list-style: none;
 }
+
+.TodoList-container {
+  display: flex;
+  flex-direction: column;
+  margin: 14px auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.TodoList-container > ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 14px; */
+}
+
+/* @media (max-width: 760px) {
+  .TodoList-container > ul {
+    grid-template-columns: auto;
+  }
+} */

@@ -8,11 +8,22 @@
   --delete-red: rgb(255, 52, 37);
 }
 
+/* :root {
+  --dark-main-color: #1a1b1c;
+  --main-color: #35bcf1;
+  --text-color: #001225;
+  --light-color: #bbdefb;
+  --checked-green: rgb(27, 187, 27);
+  --unchecked-color: #6e6e6e;
+  --delete-red: rgb(255, 52, 37);
+} */
+
 body {
+  position: relative;
   display: flex;
   box-sizing: border-box;
   width: 100%;
-  max-width: 650px;
+  max-width: 1350px;
   overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
@@ -22,7 +33,7 @@ body {
 }
 
 #root {
-  margin: 20px 8%;
+  margin: 0px 5%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -30,7 +41,7 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: var(--text-color);
-  padding: 36px;
-  border-radius: 40px;
+  padding: calc(30px + 3%);
+  /* border-radius: 40px; */
   box-shadow: 0px 5px 30px rgba(202, 206, 207, 0.3);
 }
