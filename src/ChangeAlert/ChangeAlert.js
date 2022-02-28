@@ -1,9 +1,10 @@
 import React from "react";
-import { withStorageListener } from "./withStorageListener";
+import { useStorageListener } from "./useStorageListener";
 import "./ChangeAlert.css";
 import reloadIcon from "../assets/reload-icon.svg";
 
-function ChangeAlert({ show, toggleShow }) {
+function ChangeAlert({ synchronize }) {
+  const { show, toggleShow } = useStorageListener(synchronize);
   if (show) {
     return (
       <div className="reloadInfoButtonContainer">
@@ -18,6 +19,4 @@ function ChangeAlert({ show, toggleShow }) {
   }
 }
 
-const ChangeAlertWithStorageListener = withStorageListener(ChangeAlert);
-
-export { ChangeAlertWithStorageListener };
+export { ChangeAlert };
