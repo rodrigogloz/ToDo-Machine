@@ -10,14 +10,6 @@ function CreateTodoButton(props) {
     <button className="CreateTodoButton" onClick={onClickButton}>
       +
     </button>
-    // <div>
-    //   <input
-    //     type="checkbox"
-    //     className="CreateTodoButton"
-    //     onClick={onClickButton}
-    //   />
-    //   <label className="buttonLabel">+</label>
-    // </div>
   );
 }
 
