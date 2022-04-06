@@ -8,10 +8,10 @@ function ChangeAlert({ synchronize }) {
   if (show) {
     return (
       <div className="reloadInfoButtonContainer">
-        <p className="reloadInfoButtonText">Hay cambios sin actualizar</p>
         <button className="reloadInfoButton" onClick={() => toggleShow(false)}>
           <img src={reloadIcon} className="reloadIcon" alt="reload" />
         </button>
+        <p className="reloadInfoButtonText">Cambios sin actualizar</p>
       </div>
     );
   } else {

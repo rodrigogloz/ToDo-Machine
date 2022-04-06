@@ -32,53 +32,61 @@ function App() {
   } = useTodos();
   return (
     <React.Fragment>
-      <TodoHeader loading={loading}>
-        <TodoCounter totalTodos={totalTodos} completedTodos={completedTodos} />
-        <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-      </TodoHeader>
-      <TodoList
-        error={error}
-        loading={loading}
-        totalTodos={totalTodos}
-        searchedTodos={searchedTodos}
-        searchText={searchValue}
-        onError={() => <TodosError />}
-        onLoading={() => <TodosLoading />}
-        onEmptyTodos={() => <EmptyTodos />}
-        onEmptySearchResults={(searchText) => (
-          <p className="emptySearch">
-            No hay resultados para {`"${searchText}"`}{" "}
-          </p>
-        )}
-        // render={(todo) => (
-        //   <TodoItem
-        //     key={todo.text}
-        //     text={todo.text}
-        //     completed={todo.completed}
-        //     onComplete={() => completeTodo(todo.text)}
-        //     onDelete={() => deleteTodo(todo.text)}
-        //   />
-        // )}
-      >
-        {(todo) => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
+      <div className="app-container">
+        <TodoHeader loading={loading}>
+          <TodoCounter
+            totalTodos={totalTodos}
+            completedTodos={completedTodos}
           />
+          <TodoSearch
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
+          />
+        </TodoHeader>
+        <TodoList
+          error={error}
+          loading={loading}
+          totalTodos={totalTodos}
+          searchedTodos={searchedTodos}
+          searchText={searchValue}
+          onError={() => <TodosError />}
+          onLoading={() => <TodosLoading />}
+          onEmptyTodos={() => <EmptyTodos />}
+          onEmptySearchResults={(searchText) => (
+            <p className="emptySearch">
+              No hay resultados para {`"${searchText}"`}{" "}
+            </p>
+          )}
+          // render={(todo) => (
+          //   <TodoItem
+          //     key={todo.text}
+          //     text={todo.text}
+          //     completed={todo.completed}
+          //     onComplete={() => completeTodo(todo.text)}
+          //     onDelete={() => deleteTodo(todo.text)}
+          //   />
+          // )}
+        >
+          {(todo) => (
+            <TodoItem
+              key={todo.text}
+              text={todo.text}
+              completed={todo.completed}
+              onComplete={() => completeTodo(todo.text)}
+              onDelete={() => deleteTodo(todo.text)}
+            />
+          )}
+        </TodoList>
+
+        {!!openModal && (
+          <Modal>
+            <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
+          </Modal>
         )}
-      </TodoList>
 
-      {!!openModal && (
-        <Modal>
-          <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
-        </Modal>
-      )}
-
-      <CreateTodoButton setOpenModal={setOpenModal} />
-      <ChangeAlert synchronize={synchronizeTodos} />
+        <CreateTodoButton setOpenModal={setOpenModal} />
+        <ChangeAlert synchronize={synchronizeTodos} />
+      </div>
     </React.Fragment>
   );
 }
